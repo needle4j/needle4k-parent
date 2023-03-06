@@ -200,6 +200,81 @@
                     <groupId>org.jetbrains.kotlin</groupId>
                     <version>${kotlin.version}</version>
 
+                    <configuration>
+                        <compilerPlugins>
+                            <plugin>jpa</plugin>
+                            <plugin>no-arg</plugin>
+                            <plugin>all-open</plugin>
+                        </compilerPlugins>
+
+                        <jvmTarget>${maven.compiler.target}</jvmTarget>
+
+                        <pluginOptions>
+                            <option>all-open:annotation=javax.ejb.LocalBean</option>
+                            <option>all-open:annotation=javax.ejb.Stateless</option>
+                            <option>all-open:annotation=javax.interceptor.Interceptor</option>
+                            <option>all-open:annotation=javax.ejb.MessageDriven</option>
+                            <option>all-open:annotation=javax.ejb.Singleton</option>
+                            <option>all-open:annotation=javax.ejb.Startup</option>
+                            <option>all-open:annotation=javax.ws.rs.Path</option>
+                            <option>all-open:annotation=javax.ws.rs.ext.Provider</option>
+                            <option>all-open:annotation=javax.ws.rs.container.PreMatching</option>
+                            <option>all-open:annotation=javax.ws.rs.ApplicationPath</option>
+                            <option>all-open:annotation=javax.enterprise.context.ApplicationScoped</option>
+                            <option>all-open:annotation=javax.enterprise.context.RequestScoped</option>
+                            <option>all-open:annotation=javax.enterprise.context.SessionScoped</option>
+                            <option>all-open:annotation=javax.enterprise.inject.Default</option>
+                            <option>all-open:annotation=javax.enterprise.inject.Model</option>
+                            <option>all-open:annotation=javax.inject.Scope</option>
+                            <option>all-open:annotation=javax.inject.Singleton</option>
+                            <option>all-open:annotation=javax.inject.Named</option>
+                            <option>all-open:annotation=javax.inject.Qualifier</option>
+                            <option>all-open:annotation=javax.persistence.Entity</option>
+                            <option>all-open:annotation=javax.persistence.Embeddable</option>
+
+                            <option>all-open:annotation=jakarta.ejb.LocalBean</option>
+                            <option>all-open:annotation=jakarta.ejb.Stateless</option>
+                            <option>all-open:annotation=jakarta.interceptor.Interceptor</option>
+                            <option>all-open:annotation=jakarta.ejb.MessageDriven</option>
+                            <option>all-open:annotation=jakarta.ejb.Singleton</option>
+                            <option>all-open:annotation=jakarta.ejb.Startup</option>
+                            <option>all-open:annotation=jakarta.ws.rs.Path</option>
+                            <option>all-open:annotation=jakarta.ws.rs.ext.Provider</option>
+                            <option>all-open:annotation=jakarta.ws.rs.container.PreMatching</option>
+                            <option>all-open:annotation=jakarta.ws.rs.ApplicationPath</option>
+                            <option>all-open:annotation=jakarta.enterprise.context.ApplicationScoped</option>
+                            <option>all-open:annotation=jakarta.enterprise.context.RequestScoped</option>
+                            <option>all-open:annotation=jakarta.enterprise.context.SessionScoped</option>
+                            <option>all-open:annotation=jakarta.enterprise.inject.Default</option>
+                            <option>all-open:annotation=jakarta.enterprise.inject.Model</option>
+                            <option>all-open:annotation=jakarta.inject.Scope</option>
+                            <option>all-open:annotation=jakarta.inject.Singleton</option>
+                            <option>all-open:annotation=jakarta.inject.Named</option>
+                            <option>all-open:annotation=jakarta.inject.Qualifier</option>
+                            <option>all-open:annotation=jakarta.persistence.Entity</option>
+                            <option>all-open:annotation=jakarta.persistence.Embeddable</option>
+
+                            <option>all-open:annotation=org.springframework.context.annotation.Bean</option>
+                            <option>all-open:annotation=org.springframework.stereotype.Service</option>
+                            <option>all-open:annotation=org.springframework.stereotype.Repository</option>
+                            <option>all-open:annotation=org.springframework.stereotype.Controller</option>
+                        </pluginOptions>
+                    </configuration>
+
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.jetbrains.kotlin</groupId>
+                            <artifactId>kotlin-maven-allopen</artifactId>
+                            <version>${kotlin.version}</version>
+                        </dependency>
+
+                        <dependency>
+                            <groupId>org.jetbrains.kotlin</groupId>
+                            <artifactId>kotlin-maven-noarg</artifactId>
+                            <version>${kotlin.version}</version>
+                        </dependency>
+                    </dependencies>
+
                     <executions>
                         <execution>
                             <id>compile</id>
