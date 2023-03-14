@@ -64,10 +64,10 @@
         <hibernate.version>5.6.15.Final</hibernate.version>
 
         <junit5.version>5.9.1</junit5.version>
-        <testng.version>7.6.1</testng.version>
+        <testng.version>7.7.1</testng.version>
         <testng.junitsupport.version>1.0.4</testng.junitsupport.version>
         <easymock.version>5.1.0</easymock.version>
-        <mockito.version>5.1.1</mockito.version>
+        <mockito.version>5.2.0</mockito.version>
         <mockito.kotlin.version>4.1.0</mockito.kotlin.version>
         <assertj.version>3.24.2</assertj.version>
         <hsqldb.version>2.7.1</hsqldb.version>
@@ -339,7 +339,7 @@
                     <version>3.0.0-M9</version>
 
                     <configuration>
-                        <reuseForks>false</reuseForks>
+                        <reuseForks>true</reuseForks>
                     </configuration>
                 </plugin>
             </plugins>
