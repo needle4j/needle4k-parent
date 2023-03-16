@@ -5,8 +5,8 @@
 
     <groupId>org.needle4k</groupId>
     <artifactId>needle4k-parent</artifactId>
-    <url>https://www.needle4j.org</url>
-    <inceptionYear>2014</inceptionYear>
+    <url>https://github.com/needle4j/needle4k</url>
+    <inceptionYear>2023</inceptionYear>
 
     <version>4.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
