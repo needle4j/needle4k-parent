@@ -220,6 +220,8 @@
                         </compilerPlugins>
 
                         <jvmTarget>${maven.compiler.target}</jvmTarget>
+                        <!-- https://blog.jetbrains.com/kotlin/2020/07/kotlin-1-4-m3-generating-default-methods-in-interfaces/ -->
+                        <args>-Xjvm-default=all</args>
 
                         <pluginOptions>
                             <option>all-open:annotation=javax.ejb.LocalBean</option>
